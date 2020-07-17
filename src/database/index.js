@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/estoca?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://krelod:m1LhupPwQfn5rG0q@estoca-kjhkk.gcp.mongodb.net/main?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
