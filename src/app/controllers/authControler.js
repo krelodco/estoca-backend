@@ -39,7 +39,7 @@ router.post('/create', async (req, res) => {
         return res.status(400).send({ error })
     }
 })
-router.post('/ready', async (req, res) => {
+router.post('/read', async (req, res) => {
     const { email, password } = req.body
 
     const user = await User.findOne({ email }).select('+password')
