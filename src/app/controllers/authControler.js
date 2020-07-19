@@ -30,7 +30,11 @@ router.post('/create', async (req, res) => {
 
         user.password = undefined
 
-        return res.send({ user, token: generateToken({ id: user.id }) })
+        return res.send({ 
+            user, 
+            token: generateToken({ id: user.id }), 
+            code: 2000
+        })
     } catch(error) {
         return res.status(400).send({ error })
     }
